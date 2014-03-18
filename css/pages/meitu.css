@@ -101,3 +101,26 @@ html,body{
     margin-top: -35px;
     z-index: 10;
 }
+
+#detail{
+    background: #000;
+}
+
+.slider{
+    width: 100%;
+}
+.bx-wrapper img{
+    width: 100%;
+}
+
+.bx-wrapper .bx-viewport{
+    border: 0 none;
+    -moz-box-shadow: none;
+    -wekit-box-shadow:none;
+    box-shadow: none;
+
+}
+
+.bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto{
+    bottom: 0;
+}

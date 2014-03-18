@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0,target-densitydpi=medium-dpi" name="viewport">
+    <title>美图-详情页</title>
+    <link rel="stylesheet" type="text/css" href="../css/common.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/jquery.bxslider.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/pages/meitu.css"/>
+</head>
+<body>
+<div class="wrap datail" id="detail">
+    <div class="slider">
+        <ul class="bxslider">
+		  <li><img src="../img/meitu/tmp/1.jpg" /></li>
+          <li><img src="../img/meitu/tmp/2.jpg" /></li>
+          <li><img src="../img/meitu/tmp/3.jpg" /></li>
+          <li><img src="../img/meitu/tmp/4.jpg" /></li>
+          <li><img src="../img/meitu/tmp/5.jpg" /></li>
+          <li><img src="../img/meitu/tmp/6.jpg" /></li>
+          <li><img src="../img/meitu/tmp/7.jpg" /></li>
+          <li><img src="../img/meitu/tmp/8.jpg" /></li>
+		</ul>
+    </div>
+   
+</div>
+</body>
+<script src="../js/jquery-1.9.1.min.js"></script>
+<script src="../js/jquery.bxslider.min.js"></script>
+<script>
+   $(function(){
+       var bs;
+       var w = $(window).width();
+       $('.bxslider').bxSlider({
+           useCSS:false,
+           slideWidth:w,
+           controls:false
+       });
+
+       function slider(){
+           var slideWidth = $(window).width();
+
+           bs.reloadSlider.bxSlider({
+               useCSS:false,
+               slideWidth:w,
+               controls:false
+           });
+
+       }
+       slider();
+
+
+       $(window).on('resize',function(){
+           slider();
+       });
+
+   });
+</script>
+</html>
