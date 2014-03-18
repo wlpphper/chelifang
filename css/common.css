@@ -1,0 +1,28 @@
+@charset "utf-8";
+/* CSS Document */
+/*Reset start*/
+body, div, dl, dt, dd, ul, ol, li,h1, h2, h3, h4, h5, h6, form, legend, button, p,th,td{border:0;font-size:100%;margin:0;outline:0;padding:0;}
+h1, h2, h3, h4, h5, h6{font-size:100%;font-weight:normal;}
+fieldset, img{border:none;}
+img{vertical-align:top; border:0}
+a{ text-decoration:none; outline:none;}
+a:focus{outline:none;}
+ol, ul{list-style:none outside none; padding:0; margin:0}
+/*table{border-collapse:collapse;border-spacing:0;}*/
+sub,sup{font-size:80%;line-height:0;position:relative;vertical-align:baseline;}
+sup{top:-0.5em;}
+sub{bottom:-0.25em;}
+var{font-family: Arial; font-style:normal;}
+var{ font-family:Simsun; padding-left:3px;}
+body,button,input,select,textarea{color:#606060;font:12px/1.5 Arial, Helvetica, SimSun, san-serif;}
+.clearfix:after {content:"\20"; display:block; height:0; clear:both; visibility:hidden; }
+.clearfix{display:inline-block; }
+.clearfix{display:block;}
+.clearbox{border-top:transparent 0px solid;clear:both;font-size:0;margin-top:0px;visibility:hidden; overflow:hidden;height:0;}
+/*Reset end*/
+
+body{ color:#444; background-color:#fff; font-family:"微软雅黑"; }
+h2{ font-weight:bold; font-size:14px;}
+form *{font-family:"微软雅黑"; }q
+.fr{ float:right}
+.fl{ float:left}

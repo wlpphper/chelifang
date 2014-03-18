@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0,target-densitydpi=medium-dpi" name="viewport">
+    <title>视频-详情页</title>
+    <link rel="stylesheet" type="text/css" href="../css/common.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/pages/video.css"/>
+</head>
+<body>
+<div class="wrap datail" id="detail">
+    <div class="player">
+        <div class="player-inner" id="player">
+            <video id="video" class="video" controls preload="auto" width="100%" height="100%"
+                   poster="http://g2.ykimg.com/1100641F464D071E458469011DE083582673ED-A610-3988-34C5-01D04EAE82D5"
+                   data-flash="http://218.26.232.26/697B129077D3F77F2C7723AA3/03000201004D071E4502E4011DE083726AE9C6-DD27-0438-F301-97D78C354347.flv">
+                <source src="http://221.204.194.133/6573EF189D53A82EE851046293/0300080100502B3AC406DD045CC724D528A8D8-3330-C7F0-C5A3-FD397F070FBC.mp4" type='video/mp4' />
+                <source src="http://video-js.zencoder.com/oceans-clip.ogg" type='video/ogg' />
+                <source src="http://video-js.zencoder.com/oceans-clip.webm" type='video/webm' />
+            </video>
+        </div>
+    </div>
+</div>
+</body>
+<script src="../js/jquery-1.9.1.min.js"></script>
+<script src="../js/video/swfobject.js"></script>
+<script>
+    function resizeVideo(){
+        var minW = 320;
+        var minH = 180;
+        var winW = $(window).width();
+        var pW = winW;
+        var pH = parseInt(winW * minH / minW,10);
+        $("#player").css({width:pW,height:pH});
+
+    }
+
+    resizeVideo();
+
+    $(window).on('resize',function(){
+       resizeVideo();
+    });
+
+    if (swfobject.hasFlashPlayerVersion("9.0.0")) {
+        var $video = $("#video");
+        var videoPath = $video.data('flash');
+        var poster = $video.attr("poster");
+        swfobject.embedSWF("../js/video/preview.swf", "video", "100%", "100%", "9.0.0", null, {video: videoPath, autoplay: 0, autoreplay: 1, startpic: poster}, {allowfullscreen: 'true', allowscriptaccess: 'always', wmode: 'opaque'}, {id: "myvideo", name: "myvideo"});
+    }
+</script>
+</html>

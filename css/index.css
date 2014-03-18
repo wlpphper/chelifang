@@ -1,0 +1,235 @@
+html {
+    color: #000;
+    background: #FFF
+}
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td {
+    margin: 0;
+    padding: 0
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+fieldset, img {
+    border: 0
+}
+
+address, caption, cite, code, dfn, em, strong, th, var {
+    font-style: normal;
+    font-weight: normal
+}
+
+ol, ul {
+    list-style: none
+}
+
+caption, th {
+    text-align: left
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    font-weight: normal
+}
+
+q:before, q:after {
+    content: ''
+}
+
+abbr, acronym {
+    border: 0;
+    font-variant: normal
+}
+
+sup {
+    vertical-align: text-top
+}
+
+sub {
+    vertical-align: text-bottom
+}
+
+input, textarea, select {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    *font-size: 100%
+}
+
+legend {
+    color: #000
+}
+
+#yui3-css-stamp.cssreset {
+    display: none
+}
+
+html,body{
+    margin:0px;
+    height:100%;
+}
+
+.home{
+    width: 100%;
+    height: 100%;
+    background: url('../img/home/home-bg.png') no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.home .nav{
+    position: relative;
+}
+
+.home .nav ul li{
+    max-width: 186px;
+    max-height: 160px;
+    position: absolute;
+    text-indent: -9999px;
+    z-index: 10;
+}
+
+.home .nav ol li a{
+    display: block;
+    position: absolute;
+    text-indent: -9999px;
+    width: 0;
+    height: 0;
+}
+
+.home .nav ol li a.s120{
+    background: url('../img/home/children/fengkuangduiyou.png') no-repeat;
+    background-size: cover;
+}
+.home .nav ol li a.s123{
+    background: url('../img/home/children/gongshijieshao.png') no-repeat;
+    background-size: cover;
+}
+.home .nav ol li a.s125{
+    background: url('../img/home/children/jindiananni.png') no-repeat;
+    background-size: cover;
+}
+.home .nav ol li a.s70{
+    background: url('../img/home/children/hangyeshuju.png') no-repeat;
+    background-size: cover;
+}
+
+.home .nav ol li a.s72{
+    background: url('../img/home/children/shangyechelue.png') no-repeat;
+    background-size: cover;
+}
+
+.home .nav ol li a.s73{
+    background: url('../img/home/children/hangyefenxi.png') no-repeat;
+    background-size: cover;
+}
+
+.home .nav ol li a.s50{
+    background: url('../img/home/children/aizuojia.png') no-repeat;
+    background-size: cover;
+}
+
+.home .nav ol li a.s51{
+    background: url('../img/home/children/leshiping.png') no-repeat;
+    background-size: cover;
+}
+
+.home .nav ol li a.s52{
+    background: url('../img/home/children/manshenghuo.png') no-repeat;
+    background-size: cover;
+}
+
+.home .nav ol li a.s53{
+    background: url('../img/home/children/wenzhuanjia.png') no-repeat;
+    background-size: cover;
+}
+
+.home .nav ol li a.s55{
+    background: url('../img/home/children/youmeitu.png') no-repeat;
+    background-size: cover;
+}
+.home .nav ul li.s6{
+    background: url('../img/home/kefuzhuanti.png') no-repeat;
+    background-size: cover;
+}
+.home .nav ul li.s12{
+    background: url('../img/home/chelifang.png') no-repeat;
+    background-size: cover;
+}
+
+.home .nav ul li.s11{
+    background: url('../img/home/jindiananni.png') no-repeat;
+    background-size: cover;
+}
+
+.home .nav ul li.s7{
+    background: url('../img/home/cheshiye.png') no-repeat;
+    background-size: cover;
+}
+
+.home .nav ul li.s1{
+    background: url('../img/home/hangyefenxi.png') no-repeat;
+    background-size: cover;
+}
+
+.home .nav ul li.s5{
+    background: url('../img/home/cheshenghe.png') no-repeat;
+    background-size: cover;
+}
+
+.home .nav .logo{
+    position: absolute;
+    background: url('../img/home/logo.png') no-repeat;
+    background-size: cover;
+    z-index: 9999;
+}
+
+
+.rotate2{
+    /* 确保我们是在一个 3-D 空间 */
+    -webkit-transform-style: preserve-3d;
+    /*让整个行使用x-轴旋转、7秒中的动画、无限次播放以及线性 */
+    -webkit-animation-name: x-spin;
+    -webkit-animation-duration: 7s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+}
+
+.rotate{
+    -webkit-animation: myrotate 1s infinite linear;-webkit-animation-play-state:running;
+}
+@-webkit-keyframes myrotate{
+    0%{
+        -webkit-transform : rotate(0deg);
+    }
+    100%{
+        -webkit-transform : rotate(360deg);
+    }
+}
+
+/* 定义要调用的动画 */
+@-webkit-keyframes x-spin {
+    0% { -webkit-transform: rotateX(0deg); }
+    50% { -webkit-transform: rotateX(180deg); }
+    100% { -webkit-transform: rotateX(360deg); }
+}
+/* for 320px width screen */
+@media screen and (max-width:320px){
+    #home{
+    }
+
+}
+/* for 768px width screen */
+@media screen and (min-width:321px) and (max-width:768px){
+    #home{
+    }
+
+}
+/* for 1024px width screen */
+@media screen and (min-width:769px) and (max-width:1024px){
+    #home{
+    }
+}

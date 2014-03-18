@@ -1,0 +1,52 @@
+.player, .player .player-inner {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+html,body{
+    height: 100%;
+}
+.list{
+    background: url("../images/video/list-bg.png") no-repeat;
+    background-size: cover;
+    height: 100%;
+    padding-top: 10px;
+}
+
+.list .videos li{
+    width: 400px;
+    margin-bottom: 10px;
+    background:url("../images/video/opacity-bg.png") repeat;
+    padding: 10px;
+    padding-bottom: 0;
+    margin: 10px auto;
+    border:2px solid #b8b8b8;
+
+}
+.list .videos li .pic{
+    display: block;
+    text-align: center;
+    position: relative;
+}
+
+.list .videos li h3{
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.list .videos li i{
+    width: 70px;
+    height: 70px;
+    background: url("../images/video/start-bt.png") no-repeat;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -35px;
+    margin-top: -35px;
+    z-index: 10;
+}
